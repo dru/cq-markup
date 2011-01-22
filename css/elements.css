@@ -1,0 +1,374 @@
+/* BUTTONS */
+a.button {
+    color: #fff;
+    font-size: 14px;
+    font-weight: normal;
+    display: inline-block;
+    height: 23px;
+    line-height: 23px;
+    text-align: center;
+    padding: 0 8px;
+    cursor: pointer;
+    text-decoration: none;
+    
+    border: 1px solid #517301;
+    background: #688f00;
+    
+    text-shadow: #333 0 1px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#759a00), to(#5d8600));
+    background-image: -moz-linear-gradient(top,  #759a00,  #5d8600);
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+}
+    a.button b {
+        font-size: 16px;
+        display: block;
+        float: left;
+        margin: 1px 6px 0 0;
+    }
+
+a.big {
+    font-size: 17px;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 23px;
+    
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    margin-bottom: 15px;
+}
+    a.big b {
+        font-size: 27px;
+        margin: 0px 12px 0 0;
+    }
+  
+a.archive {
+    border-color: #d9dbdc;
+    background: #f4f5f6;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fefefe), to(#e9eced));
+    background-image: -moz-linear-gradient(top,  #fefefe,  #e9eced);
+    color: #707476;
+    height: 17px;
+    line-height: 17px;
+    font-size: 11px;
+    text-shadow: none;
+} 
+/* !BUTTONS */
+    
+    
+/* BLOCK */ 
+.block {
+    padding: 20px 40px;
+    background: #fff;
+    margin: 0 0 10px 0;
+    position: relative;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+}
+
+    .block .date {
+        font-size: 11px;
+        color: #8a9595;
+        line-height: 19px;
+    }
+        .block .date a.button {
+            float: right;
+        }
+    
+    .block .close {
+        width: 13px;
+        height: 13px;
+        background: url('../img/close.png') no-repeat;
+        position: absolute;
+        right: 11px;
+        top: 11px;
+        cursor: pointer;
+    }
+    
+    .block .content {
+        margin-top: 20px;
+    }
+    
+        .block .content .transcript,
+        .block .content .withCounter {
+            font-size: 14px;
+            font-weight: bold;
+            color: #989a9c;
+            line-height: 20px;
+            margin-bottom: 7px;
+            display: block;
+        }
+        
+        .block .content .transcript {
+            background: url('../img/transcriptGrey.png') no-repeat;
+            padding-left: 23px;
+        }
+        
+        .block .content .transcript.blue {
+            background-image: url('../img/transcriptBlue.png');
+        }
+        
+        .block .content .blue {
+            color: #43b1cf;
+        }
+        
+        .block .content .withCounter span {
+            display: inline-block;
+            line-height: 22px;
+        }
+        
+        .block .content .big span {
+            color: #0e0f10;
+            font-size: 18px;
+            font-weight: normal;
+            line-height: 28px;
+        }
+        
+        .block .content .withCounter span.counter {
+            width: 20px;
+            height: 20px;
+            margin-top: -3px;
+            border-radius: 10px;
+            -moz-border-radius: 10px;
+            text-align: center;
+            font-size: 11px;
+            font-weight: normal;
+            color: #fff;
+            background: #bec6cb;
+        }
+
+        .block .content .big span.counter {
+            line-height: 21px;
+        }
+
+#right .block,
+.grey {
+    background: #dfe2e4;
+    padding: 20px;
+}
+
+    #right .block .outer {
+        background: #fff;
+        margin: 20px -20px -20px -20px;
+        padding: 20px;
+        border-bottom-left-radius: 4px;
+        -moz-border-radius-bottomleft: 4px;
+        border-bottom-right-radius: 4px;
+        -moz-border-radius-bottomright: 4px;
+        text-align: center;
+    }
+
+.block .grey {
+    padding: 10px;
+}
+
+.userInfo {}
+
+    .userInfo .avatar {
+        float: left;
+        width: 70px;
+        height: 70px;
+    }
+        .userInfo .avatar img {
+            border-radius: 4px;
+            -moz-border-radius: 4px;
+        }
+        
+    .userInfo .info {
+        color: #292e30;
+        margin-bottom: 10px;
+    }
+        .userInfo .info h5 {
+            margin: 0px;
+            font-size: 14px;
+        }
+        .userInfo .info i {
+            display: block;
+            font-size: 11px;
+            color: #989a9c;
+            margin-bottom: 10px;
+        }
+        .userInfo .info span {
+            font-size: 12px;
+        }
+            .userInfo .info span a {
+                font-weight: bold;
+            }
+            
+            
+.media {
+    margin-left: -10px;
+}
+
+    .media .item {
+        display: inline-block;
+        border: 5px solid #2b3033;
+        border-radius: 4px;
+        margin: 25px 0px 0px 10px;
+        position: relative;
+    }
+        .media .item .delete {
+            display: block;
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            top: -15px;
+            right: -15px;
+            background: url('../img/mediaDelete.png') no-repeat;
+            cursor: pointer;
+        }
+       
+       
+.calendar {
+    display: inline-block;
+    width: 199px;
+}
+    .calendar .month {
+        font-size: 12px;
+    }
+        .calendar .month .prev {
+            float: left;
+            width: 8px;
+            height: 12px;
+            background: url('../img/monthPrev.png');
+            margin-left: 10px;
+        }
+        .calendar .month .next {
+            float: right;
+            width: 8px;
+            height: 12px;
+            background: url('../img/monthNext.png');
+            margin-right: 10px;
+        }
+        
+    .calendar .day {
+        display: inline-block;
+        margin: 3px 0px 0 0;
+        padding: 0px;
+        width: 23px;
+        height: 18px;
+        text-align: center;
+        line-height: 18px;
+        color: #848484;
+        font-size: 11px;
+        border: 1px solid #e5e5e5;
+        border-radius: 3px;
+        -moz-border-radius: 3px;
+    }
+    .calendar .light {
+        color: #d7d7d7;
+    }
+    .calendar .dark {
+        background: #282d2f;
+        border-color: #282d2f;
+        color: #fff;
+    }
+    .calendar .weekDay {
+        border: 1px solid #fff;
+        font-weight: bold;
+        color: #a7a7a7;
+        text-transform: capitalize;
+    }
+    .calendar .active {
+        background: url('../img/activeDay.gif') no-repeat 18px 13px;
+    }
+            
+/* !BLOCKS */
+
+
+/* LIST */
+.list {
+    color: #0e0f10;
+}
+    .list dl {
+        margin: 20px 0;
+        padding: 0px;
+    }
+        .list dt {
+            margin: 0px 0 10px 0;
+            padding: 0px;
+            font-size: 14px;
+            
+        }
+        .list dd {
+            margin: 0px 0;
+            padding: 0px;
+        }
+            .list dd small {
+                display: block;
+                color: #8a9595;
+                font-size: 11px;
+            }
+            .list dd a {
+                display: inline-block;
+                font-size: 14px ;
+            }
+            
+.questions {}
+    .questions .grey {
+        margin-top: 10px;
+        padding: 15px 15px 15px 50px;
+        background: #f5f6f7;
+    }
+        .questions .grey:hover {
+            background: #eff0f1;
+        }
+    .questions .block {
+        color: #6c6e71;
+        font-size: 14px;
+    }
+        .questions .block b.num {
+            float: left;
+            font-size: 18px;
+            color: #292e30;
+            width: 20px;
+            font-weight: normal;
+            margin-left: -30px;
+        }
+        .questions .block .actions {
+            margin-top: 15px;
+        }
+        .questions .block .button {
+            margin-top: 15px;
+        }
+        .questions .block small a {
+            color: #6c6e71;
+        }
+    .questions h3 .actions {
+        display: inline-block;
+        margin-left: 10px;
+    }
+
+/* !LIST */
+
+
+/* LINKS */    
+.actions a {
+    color: #43b1cf;
+    padding-left: 17px;
+    line-height: 13px;
+    font-size: 11px;
+    text-decoration: none;
+}
+
+.actions a:hover {
+    text-decoration: underline;
+}
+
+.actions a.edit {
+    background: url('../img/pen.png') no-repeat 0px 1px;
+}
+.actions a.import {
+    background: url('../img/import.png') no-repeat;
+}
+/* !LINKS */
+
+
+/* OTHER */
+.block hr {
+    margin: 20px -40px 0 -40px;
+    border: 0;
+    height: 1px;
+    background: #f0f1f1;
+}
+/* !OTHER */

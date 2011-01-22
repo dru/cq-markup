@@ -1,0 +1,144 @@
+body {
+    padding: 0;
+    margin: 0;
+    font: normal 13px Helvetica, sans-serif;
+    background: #f2f4f5 url('../img/bg.gif');
+}
+
+a {
+    text-decoration: none;
+}
+    a:hover {
+        text-decoration: underline;
+    }
+
+h2 {
+    font-size: 24px;
+    font-weight: normal;
+    color: #000;
+    margin: 8px 0 5px 0;
+    padding: 0px;
+}
+
+h3 {
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    font-weight: normal;
+}
+    h3.italic {
+        font-style: italic;
+        color: #868787;
+    }
+
+h4 {
+    margin: 0px;
+    padding: 0px;
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+
+.fr {
+    float: right;
+}
+
+.mt10 {
+    margin-top: 10px;
+}
+
+.mt5 {
+    margin-top: 5px;
+}
+
+.mt30 {
+    margin-top: 30px;
+}
+
+div.pl30 {
+    padding-left: 30px;
+}
+
+div.pb30 {
+    padding-bottom: 30px;
+}
+
+a.bigLink {
+    font-size: 15px;
+}
+
+a.blue {
+    color: #43b1cf;
+}
+
+.viewport {
+    width: 960px;
+    margin: 0 auto;
+}
+
+#header {
+    height: 55px;
+    font-size: 200%;
+    color: #fff;
+    background: #000 url('../img/topBg.gif');
+}
+    #header .viewport {
+        background-image: url('../img/shadowBg.png');
+    }
+    
+    #logo,
+    #topMenu {
+        display: inline-block;
+        line-height: 47px;
+        vertical-align: middle;
+    }
+
+    #logo {
+        width: 171px;
+        height: 55px;
+        overflow: hidden;
+        background: url('../img/logo.png') no-repeat 0px 16px;
+        text-decoration: none;
+    }
+
+    #topMenu {
+        float: right;
+    }
+        #topMenu a {
+            color: #fff;
+            font-size: 14px;
+            font-weight: normal;
+            margin-left: 23px;
+            padding-left: 18px;
+            display: inline-block;
+        }
+        #topMenu a.help {
+            background: url('../img/help.png') no-repeat -2px center;
+        }
+        #topMenu a.close {
+            background: url('../img/closeTop.png') no-repeat left center;
+        }
+    
+#navigation {
+    height: 55px;
+    line-height: 55px;
+}
+    #navigation a.moderator {
+        background: url('../img/moderator.png') no-repeat left center;
+        padding-left: 13px;
+    }
+    
+#left {
+    width: 590px;
+}
+
+#right {
+    width: 350px;
+    float: right;
+}
+
+#footer {
+    color: #2b3033;
+    padding: 20px 0;
+}
