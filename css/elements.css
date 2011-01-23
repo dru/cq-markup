@@ -1,3 +1,60 @@
+/* USER INPUT  */
+.input {
+    border: 1px solid #d1d1d2;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    padding: 6px 8px;
+    background: #fff;
+    box-shadow: inset 0 0 3px #d7d9da;
+    -webkit-box-shadow: inset 0 0 3px #d7d9da;
+    -moz-box-shadow: inset 0 0 3px #d7d9da;
+    margin-bottom: 11px;
+}
+    .input input,
+    .input input:focus,
+    .input textarea,
+    .input textarea:focus {
+        width: 99%;
+        border: 0px;
+        outline: 0 none;
+        font-size: 13px;
+    }
+    .input .default {
+        color: #cecfd0;
+        font-style: italic;
+    }
+
+.option {
+    display: inline-block;
+    padding: 3px 7px 3px 5px;
+    
+}
+.option.active {
+    background: #e9ebec;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+}
+    .option a.remove {
+        background: url('../img/deleteSmall.png') no-repeat center;
+        display: inline-block;
+        width: 11px;
+        margin: 0 3px;
+    }
+        .option a.remove:hover {
+            text-decoration: none;
+        }
+    
+    .option .actions {
+        display: none;
+    }    
+    .option.active .actions {
+        display: inline-block;
+    }
+
+
+
+/* !USER INPUT */
+
 /* BUTTONS */
 a.button {
     color: #fff;
@@ -26,6 +83,16 @@ a.button {
         float: left;
         margin: 1px 6px 0 0;
     }
+    a.button span.down {
+        height: 8px;
+        display: block;
+        margin-bottom: -8px;
+        background: url('../img/buttonGreenDown.png') no-repeat center;
+    }
+
+a.wide {
+    padding: 2px 15px;
+}
 
 a.big {
     font-size: 17px;
@@ -273,6 +340,87 @@ a.archive {
         background: url('../img/activeDay.gif') no-repeat 18px 13px;
     }
             
+.tabs {
+    
+}
+    .tabs a.tab {
+        display: inline-block;
+        padding: 10px;
+        font-size: 11px;
+        letter-spacing: -0.5px;
+        text-transform: uppercase;
+        color: #43b1cf;
+        z-index: 10;
+        cursor: pointer;
+    }
+    .tabs a.active {
+        color: #000;
+        background: #f5f6f7;
+        border: 1px solid #d1d1d2;
+        border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-bottom: 0px;
+        border-bottom-left-radius: 0px;
+        -moz-border-radius-bottomleft: 0px;
+        border-bottom-right-radius: 0px;
+        -moz-border-radius-bottomright: 0px;
+        cursor: default;
+    }
+        .tabs a.active:hover {
+            text-decoration: none;
+        }
+    .tabs .container {
+        z-index: 9;
+        margin-top: -1px;
+        background: #f5f6f7;
+        padding: 15px 20px;
+        border: 1px solid #d1d1d2;
+        border-radius: 4px;
+        -moz-border-radius: 4px;
+    }
+    .tabs .firstActive {
+        border-top-left-radius: 0px;
+        -moz-border-radius-topleft: 0px;
+    }
+        .tabs .container .tabs .container {
+            padding: 15px 0 10px 0;
+            border-radius: 0px;
+            -moz-border-radius: 0px;
+            border: 0px;
+            border-top: 1px solid #d1d1d2;
+        }
+            .tabs .container .tabs .container a.ml10 {
+                display: inline-block;
+                margin-top: 5px;
+            }
+        .tabs .container .tabs a.tab {
+            border-bottom: 1px solid #d1d1d2;
+        }
+        .tabs .container .tabs a.active {
+            border-bottom: 1px solid #f5f6f7;
+        }
+            
+    .tabs a.radio {
+        height: 11px;
+        width: 15px;
+        background: #f5f6f7 url('../img/iconRadioButtons.gif') no-repeat center;
+    }
+    .tabs a.checkbox {
+        height: 11px;
+        width: 15px;
+        background: #f5f6f7 url('../img/iconCheckboxes.gif') no-repeat center;
+    }
+    .tabs a.slider {
+        height: 11px;
+        width: 15px;
+        background: #f5f6f7 url('../img/iconSlider.gif') no-repeat center;
+    }
+        .tabs a.radio:hover,
+        .tabs a.checkbox:hover,
+        .tabs a.slider:hover {
+            text-decoration: none;
+        }
+            
 /* !BLOCKS */
 
 
@@ -317,13 +465,38 @@ a.archive {
         color: #6c6e71;
         font-size: 14px;
     }
+        .questions .block .arrows {
+            width: 7px;
+            height: 18px;
+            position: absolute;
+            left: 15px;
+            top: 17px;
+        }
+            .questions .block .arrows a {
+                display: block;
+                width: 7px;
+                height: 9px;
+                cursor: pointer;
+                text-decoration: none;
+                overflow: hidden;
+            }
+                .questions .block .arrows a:hover {
+                    text-decoration: none;
+                }
+                .questions .block .arrows a.up {
+                    background: url('../img/arrowUpSmall.png');
+                }
+                .questions .block .arrows a.down {
+                    background: url('../img/arrowDownSmall.png');
+                }
+            
         .questions .block b.num {
             float: left;
             font-size: 18px;
             color: #292e30;
             width: 20px;
             font-weight: normal;
-            margin-left: -30px;
+            margin-left: -20px;
         }
         .questions .block .actions {
             margin-top: 15px;

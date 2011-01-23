@@ -120,7 +120,94 @@
                             <div class="actions fr mt5">
                                 <a href="#" class="import">импорт вопросов из файла</a>
                             </div>
-                            <a class="button" href="#"><b>+</b>добавить вопрос</a>
+                            <a class="button" href="#"><b>+</b>добавить вопрос<span class="down">&nbsp;</span></a>
+                        </div>
+                        <div class="tabs mt10">
+                            <div>
+                                <a href="moder-03.html" class="tab">Открытый вопрос</a>
+                                <a class="tab active">Закрытый вопрос</a>
+                            </div>
+                            <div class="container">
+                                <div class="input">
+                                    <input type="text" class="default" value="Категория" />
+                                </div>
+                                <div class="input">
+                                    <textarea class="default" rows="3">Вопрос</textarea>
+                                </div>
+                                <div class="tabs">
+                                    <div>
+                                        <a class="tab active radio">&nbsp;</a>
+                                        <a class="tab checkbox">&nbsp;</a>
+                                        <a class="tab slider">&nbsp;</a>
+                                    </div>
+                                    <div class="container">
+                                        <div class="option">
+                                            <input type="radio" id="r1"/>
+                                            <label for="r1">Вариант ответа №1</label>
+                                            <a class="remove" href="#">&nbsp;</a>
+                                            <div class="actions">
+                                                <a class="edit" href="#">редактировать</a>
+                                            </div>
+                                        </div>
+                                        <br/>
+                                        <div class="option">
+                                            <input type="radio" id="r2" />
+                                            <label for="r2">Вариант ответа №2</label>
+                                            <a class="remove" href="#">&nbsp;</a>
+                                            <div class="actions">
+                                                <a class="edit" href="#">редактировать</a>
+                                            </div>
+                                        </div>
+                                        <br/>
+                                        <div class="option active">
+                                            <input type="radio" id="r3" />
+                                            <label for="r3">Вариант ответа №3</label>
+                                            <a class="remove" href="#">&nbsp;</a>
+                                            <div class="actions">
+                                                <a class="edit" href="#">редактировать</a>
+                                            </div>
+                                        </div>
+                                        <br/>
+                                        <a href="#" class="blue ml10"><b>+</b> вариант ответа</a>
+                                    </div>
+                                </div>
+                                <div class="mt10">
+                                    <a class="button wide" href="#">добавить</a>
+                                    <a href="#" class="blue ml10">отмена</a>
+                                </div>
+                            </div>
+                            <!--
+                                code below should be put in dom:ready block for all inputs,
+                                selectors should be rewritten to match exactly inputs:
+                                    input.default
+                                    textarea.default
+                            -->
+                            <script>
+                            (function(){
+                                var defaultClass = 'default';
+                                var inputs = document.getElementsByClassName(defaultClass);
+                                for(var i = 0, cnt = inputs.length; i<cnt; i++){
+                                    //TODO: check if matched node is user input
+                                    inputs[i].onfocus = function(def){
+                                        return function(){
+                                            if(this.value == def) {
+                                                this.className = '';
+                                                this.value = '';
+                                            }
+                                        };
+                                    }(inputs[i].value);
+                                    
+                                    inputs[i].onblur = function(def){
+                                        return function(){
+                                            if(this.value == '') {
+                                                this.className = defaultClass;
+                                                this.value = def;
+                                            }
+                                        };
+                                    }(inputs[i].value);
+                                }
+                            }());
+                            </script>
                         </div>
                         <hr/>
                         <div class="questions mt10">
@@ -136,7 +223,6 @@
                                 <div class="actions">
                                     <a class="edit" href="#">редактировать</a>
                                 </div>
-                                <a class="button" href="#"><b>+</b>добавить вопрос</a>
                             </div>
                             <div class="block grey">
                                 <div class="arrows">
@@ -146,45 +232,6 @@
                                 <b class="num">2</b>
                                 <a class="close" href="#"></a>
                                 <span>Не вызывает ли этот ролик у вас ощущения когнитивного диссонанса?</span>
-                                <div class="actions">
-                                    <a class="edit" href="#">редактировать</a>
-                                </div>
-                            </div>
-                            
-                            <h3>
-                                <span>Категория вопросов №2</span>
-                                <div class="actions">
-                                    <a class="edit" href="#">редактировать</a>
-                                </div>
-                            </h3>
-                            <div class="block grey">
-                                <div class="arrows">
-                                    <a class="up" href="#">&nbsp;</a>
-                                    <a class="down" href="#">&nbsp;</a>
-                                </div>
-                                <b class="num">1</b>
-                                <a class="close" href="#"></a>
-                                <span>Не вызывает ли этот ролик у вас ощущения когнитивного диссонанса?</span>
-                                <div class="actions">
-                                    <a class="edit" href="#">редактировать</a>
-                                </div>
-                            </div>
-                            
-                            <h3 class="italic">Вопросы вне категорий</h3>
-                            <div class="block grey">
-                                <div class="arrows">
-                                    <a class="up" href="#">&nbsp;</a>
-                                    <a class="down" href="#">&nbsp;</a>
-                                </div>
-                                <b class="num">1</b>
-                                <a class="close" href="#"></a>
-                                <span>Как вы думаете кому бы мог принадлежать этот видеоролик?</span><br/>
-                                <small>
-                                    <b>Варианты ответа:</b><br/>
-                                    <a href="#">Volkswagen</a><br/>
-                                    <a href="#">Reanault</a><br/>
-                                    <a href="#">BMW</a>
-                                </small>
                                 <div class="actions">
                                     <a class="edit" href="#">редактировать</a>
                                 </div>
