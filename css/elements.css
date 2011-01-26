@@ -51,7 +51,103 @@
         display: inline-block;
     }
 
+.slider {
+    position: relative;
+}
+    .slider .oneToN {
+        font-size: 11px;
+    }
+        .slider .oneToN span {
+            color: #6c6e71;
+        }
+    .slider a {
+        padding: 2px 5px;
+    }
+    .slider a.selected {
+        background: #43b1cf;
+        border-radius: 3px;
+        -moz-border-radius: 3px;
+        color: #fff;
+        cursor: default;
+    }
+        .slider a.selected:hover {
+            text-decoration: none;
+        }
+    .slider .param {
+        padding: 4px 6px;
+        display: inline-block;
+    }
+    .active .param {
+        background: #e9ebec;
+        border-radius: 3px;
+        -moz-border-radius: 3px;
+    }
+        .slider .param .actions {
+            margin-top: 3px;
+            display: block;
+        }
+    .slider a.remove {
+        position: absolute;
+        right: -40px;
+        top: 50%;
+    }
+.slider.active {
+    background: none;
+    border-radius: none;
+    -moz-border-radius: none;
+}
 
+.sliderControl {
+    display: inline-block;
+    width: 250px;
+    height: 30px;
+    white-space: nowrap;
+}
+    .sliderControl .point {
+        display: inline-block;
+        text-align: center;
+        font-size: 11px;
+        font-style: italic;
+        float: left;
+        width: 10%;
+        height: 22px;
+        position: relative;
+    }
+        .sliderControl .point i {
+            position: absolute;
+            display: block;
+            width: 1px;
+            height: 9px;
+            left: 50%;
+            overflow: hidden;
+            bottom: 0px;
+            background: #cccdcf;
+        }
+    .sliderControl .line {
+        float: left;
+        background: #cccdcf;
+        height: 5px;
+        margin: -5px 5% 0 5%;
+        width: 225px;
+        position: relative;
+    }
+    .sliderControl .runner {
+        position: absolute;
+        left: 100px;
+        width: 7px;
+        height: 12px;
+        margin: -5px 0 0 -3px;
+        background: url('../img/sliderRunner.gif');
+    }
+
+.to5 .point {
+    width: 20%;
+}
+.to5 .line {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 200px;
+}
 
 /* !USER INPUT */
 
