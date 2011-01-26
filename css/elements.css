@@ -309,7 +309,6 @@ a.archive {
     background: #dfe2e4;
     padding: 20px;
 }
-
     #right .block .outer {
         background: #fff;
         margin: 20px -20px -20px -20px;
@@ -324,6 +323,46 @@ a.archive {
 .block .grey {
     padding: 10px;
 }
+
+.lightGrey {
+    background: #f5f6f7;
+    padding: 0px 20px 20px 20px;
+}
+    .lightGrey .title {
+        padding: 9px 12px 7px 12px;
+        margin-bottom: 15px;
+        color: #fff;
+        font-size: 11px;
+        display: inline-block;
+        background: #97c41d;
+        border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-top-left-radius: 0px;
+        -moz-border-radius-topleft: 0px;
+        border-top-right-radius: 0px;
+        -moz-border-radius-topright: 0px;
+    }
+    .lightGrey .inactive {
+        background: #dadddf;
+    }
+    
+    .lightGrey .date {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+        .lightGrey .date span {
+            margin-right: 20px;
+        }
+    .lightGrey .actions {
+        float: right;
+        position: relative;
+        margin: 9px 20px 0 0;
+    }
+        .lightGrey .actions .close {
+            top: 0px;
+            right: -43px;
+        }
+
 
 .userInfo {}
 
