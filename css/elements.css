@@ -23,6 +23,12 @@
         color: #cecfd0;
         font-style: italic;
     }
+    .input b.mandatory {
+        float: right;
+        margin: -25px -20px 0 0;
+        font-weight: normal;
+        font-size: 12px;
+    }
 
 .option {
     display: inline-block;
@@ -174,6 +180,12 @@
             .range .input a:hover {
                 text-decoration: none;
             }
+
+    .range a.down {
+        display: inline-block;
+        width: 6px;
+        background: url('../img/arrowDownInput.gif') no-repeat center;
+    }
 
 /* !USER INPUT */
 
