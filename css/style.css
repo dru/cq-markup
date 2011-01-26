@@ -60,6 +60,11 @@ div.mt30 {
     margin-top: 30px;
 }
 
+.mt20,
+div.mt20 {
+    margin-top: 20px;
+}
+
 .mb10 {
     margin-bottom: 10px;
 }
@@ -82,6 +87,10 @@ a.bigLink {
 
 a.blue {
     color: #43b1cf;
+}
+
+.label {
+    color: #6c6e71;
 }
 
 .viewport {

@@ -149,6 +149,32 @@
     width: 200px;
 }
 
+.range {}
+    .range .input {
+        padding: 1px 3px;
+        display: inline-block;
+        width: 20px;
+        position: relative;
+        margin-right: 15px;
+    }
+        .range .input a {
+            position: absolute;
+            right: -10px;
+            width: 6px;
+            height: 4px;
+        }
+            .range .input a.up {
+                top: 30%;
+                background: url('../img/arrowUpInput.gif') no-repeat center;
+            }
+            .range .input a.down {
+                bottom: 30%;
+                background: url('../img/arrowDownInput.gif') no-repeat center;
+            }
+            .range .input a:hover {
+                text-decoration: none;
+            }
+
 /* !USER INPUT */
 
 /* BUTTONS */
