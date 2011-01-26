@@ -34,6 +34,12 @@ h3 {
         font-style: italic;
         color: #868787;
     }
+    h3 i {
+        border-left: 1px solid #dfe2e4;
+        width: 1px;
+        overflow: hidden;
+        margin: 0 2px 0 5px;
+    }
 
 h4 {
     margin: 0px;
