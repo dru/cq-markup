@@ -23,6 +23,9 @@ h2 {
     margin: 8px 0 5px 0;
     padding: 0px;
 }
+    h2.small {
+        font-size: 18px;
+    }
 
 h3 {
     margin: 0px;
@@ -47,6 +50,7 @@ h4 {
     font-size: 14px;
     font-weight: normal;
     text-transform: uppercase;
+    color: #000;
 }
 
 .fr {
@@ -78,6 +82,13 @@ div.mt20 {
 .ml10 {
     margin-left: 10px;
 }
+.ml20 {
+    margin-left: 20px;
+}
+.mr20 {
+    margin-right: 20px;
+}
+
 
 div.pl30 {
     padding-left: 30px;
@@ -93,6 +104,10 @@ a.bigLink {
 
 a.blue {
     color: #43b1cf;
+}
+a.red,
+#leftShort a.red {
+    color: #ed493e;
 }
 
 .label {
@@ -164,6 +179,52 @@ a.blue {
     width: 350px;
     float: right;
 }
+
+
+#leftShortWrapper {
+    width: 290px;
+    background: #dfe2e4;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-top-right-radius: 0px;
+    -moz-border-radius-topright: 0px;
+    border-bottom-right-radius: 0px;
+    -moz-border-radius-bottomright: 0px;
+}
+
+#rightLongWrapper {
+    width: 670px;
+    margin-right: -100%;
+    position: relative;
+    left: 290px;
+    background: #fff;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-top-left-radius: 0px;
+    -moz-border-radius-topleft: 0px;
+    border-bottom-left-radius: 0px;
+    -moz-border-radius-bottomleft: 0px;
+}
+
+#leftShort {
+    float: left;
+    margin-right: -100%;
+    position: relative;
+    left: -290px;
+    padding: 20px;
+    width: 250px;
+}
+
+#rightLong {
+    padding: 30px 20px;
+}
+
+.clear {
+    clear:both;
+    font-size:0;
+    overflow:hidden;
+}
+
 
 #footer {
     color: #2b3033;

@@ -243,7 +243,7 @@ a.big {
         margin: 0px 12px 0 0;
     }
   
-a.archive {
+a.grey {
     border-color: #d9dbdc;
     background: #f4f5f6;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#fefefe), to(#e9eced));
@@ -253,7 +253,11 @@ a.archive {
     line-height: 17px;
     font-size: 11px;
     text-shadow: none;
-} 
+}
+a.bigger {
+    padding: 2px 10px;
+}
+
 /* !BUTTONS */
     
     
@@ -290,8 +294,7 @@ a.archive {
         margin-top: 20px;
     }
     
-        .block .content .transcript,
-        .block .content .withCounter {
+        .block .content .transcript{
             font-size: 14px;
             font-weight: bold;
             color: #989a9c;
@@ -311,35 +314,6 @@ a.archive {
         
         .block .content .blue {
             color: #43b1cf;
-        }
-        
-        .block .content .withCounter span {
-            display: inline-block;
-            line-height: 22px;
-        }
-        
-        .block .content .big span {
-            color: #0e0f10;
-            font-size: 18px;
-            font-weight: normal;
-            line-height: 28px;
-        }
-        
-        .block .content .withCounter span.counter {
-            width: 20px;
-            height: 20px;
-            margin-top: -3px;
-            border-radius: 10px;
-            -moz-border-radius: 10px;
-            text-align: center;
-            font-size: 11px;
-            font-weight: normal;
-            color: #fff;
-            background: #bec6cb;
-        }
-
-        .block .content .big span.counter {
-            line-height: 21px;
         }
 
 #right .block,
@@ -716,6 +690,54 @@ table.list {
         display: inline-block;
         margin-left: 10px;
     }
+#leftShort .questions {
+    margin-left: -20px;
+    margin-right: -20px;
+}
+    #leftShort .questions div {
+        padding: 10px 30px 10px 45px;
+        position: relative;
+        color: #6c6e71;
+    }
+        #leftShort .questions div b {
+            position: absolute;
+            left: 20px;
+            color: #000;
+            font-weight: normal;
+        }
+
+    #leftShort .questions div.hover {
+        color: #fafafa;
+        background: #b9bdc0;
+    }
+    #leftShort .questions div.selected {
+        background: #d0d3d6 url('../img/mark.png') no-repeat 97% 13px;
+    }
+    #leftShort .questions a.up {
+        background: url('../img/arrowUpQuestionsBlue.png') no-repeat center;
+        height: 10px;
+        display: block;
+        margin-bottom: 5px;
+    }
+        #leftShort .questions a.up.inactive {
+            background: url('../img/arrowUpQuestions.png') no-repeat center;
+            cursor: default;
+        }
+    #leftShort .questions a.down {
+        background: url('../img/arrowDownQuestionsBlue.png') no-repeat center;
+        height: 10px;
+        display: block;
+        margin-top: 5px;
+    }
+        #leftShort .questions a.down.inactive {
+            background: url('../img/arrowDownQuestions.png') no-repeat center;
+            cursor: default;
+        }
+    #leftShort .questions a.up:hover,
+    #leftShort .questions a.down:hover {
+        text-decoration: none;
+    }
+    
 
 /* !LIST */
 
@@ -749,4 +771,46 @@ table.list {
     height: 1px;
     background: #f0f1f1;
 }
+
+#leftShort hr {
+    margin: 20px -20px;
+    border: 0;
+    height: 1px;
+    background: #c8cbcd;
+}
+
+.withCounter {
+    font-size: 14px;
+    font-weight: bold;
+    color: #989a9c;
+    line-height: 20px;
+    margin-bottom: 7px;
+    display: block;
+}
+    .withCounter span {
+        display: inline-block;
+        line-height: 22px;
+    }
+        .withCounter span.counter {
+            width: 20px;
+            height: 20px;
+            margin-top: -3px;
+            border-radius: 10px;
+            -moz-border-radius: 10px;
+            text-align: center;
+            font-size: 11px;
+            font-weight: normal;
+            color: #fff;
+            background: #bec6cb;
+        }
+
+.big span {
+    color: #0e0f10;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 28px;
+}
+    .big span.counter {
+        line-height: 21px;
+    }
 /* !OTHER */
