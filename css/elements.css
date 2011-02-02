@@ -320,6 +320,7 @@ a.publish:hover {
             float: right;
         }
     
+    .dialog .close,
     .block .close {
         width: 13px;
         height: 13px;
@@ -469,6 +470,17 @@ a.publish:hover {
             top: -15px;
             right: -15px;
             background: url('../img/mediaDelete.png') no-repeat;
+            cursor: pointer;
+        }
+        .media .item .video {
+            display: block;
+            position: absolute;
+            width: 55px;
+            height: 55px;
+            top: 50%;
+            left: 50%;
+            margin: -27px 0 0 -27px;
+            background: url('../img/play.png') no-repeat;
             cursor: pointer;
         }
        
@@ -748,6 +760,41 @@ a.publish:hover {
         line-height: 18px;
         background: url('../img/loadMore.png') no-repeat left center;
     }
+
+.dialog {
+    background: #fff;
+    padding: 20px 30px;
+    position: absolute;
+    left: 20px;
+    top: -20px;
+    box-shadow: 0 0 0 5px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0 0 0 5px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0 0 0 5px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+    .dialog .close {
+        top: 20px;
+        right: 30px;
+    }
+
+.dialog.media {
+    left: 35px;
+    top: -80px;
+}
+.dialog.media .media {
+    margin: 9px -22px 0 0;
+    width: 574px;
+}
+.dialog.media .item {
+    margin: 0px;
+    padding: 0px;
+}
+    .dialog.media .media .item {
+        margin: 21px 22px 0 4px;
+    }
+
+
 
 /* !BLOCKS */
 
