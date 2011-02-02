@@ -69,6 +69,13 @@ h4 {
     margin-top: 5px;
 }
 
+.date,
+.small {
+    font-size: 11px;
+    color: #8a9595;
+    line-height: 19px;
+}
+
 .mt30,
 div.mt30 {
     margin-top: 30px;

@@ -264,6 +264,9 @@ a.darkGreen {
 a.bigger {
     padding: 2px 10px;
 }
+a.fat {
+    padding: 3px 12px;
+}
 a.publish {
     display: inline-block;
     padding: 8px 15px;
@@ -309,12 +312,6 @@ a.publish:hover {
     position: relative;
     border-radius: 4px;
     -moz-border-radius: 4px;
-}
-
-.date {
-    font-size: 11px;
-    color: #8a9595;
-    line-height: 19px;
 }
         .block .date a.button {
             float: right;
@@ -721,6 +718,7 @@ a.publish:hover {
     -moz-border-radius: 3px;
     height: 63px;
     line-height: 13px;
+    position: relative;
 }
 .message.noBorder {
     border: 0px;
@@ -734,12 +732,13 @@ a.publish:hover {
     .message .avatar {
         float: left;
         margin-right: 20px;
-        padding-bottom: 10px;
     }
     .message .avatar.green {
+        padding-bottom: 10px;
         background: #97c41d;
     }
     .message .avatar.red {
+        padding-bottom: 10px;
         background: #ed493e;
     }
     .message p {
@@ -747,6 +746,44 @@ a.publish:hover {
         margin: 0px;
         color: #6c6e71;
     }
+
+.dialog.chat {
+    left: -5px;
+    top: 60px;
+    padding: 20px;
+    width: 320px;
+    font-size: 12px;
+}
+    .chat .top {
+        width: 23px;
+        height: 15px;
+        background: url('../img/dialogTop.png') no-repeat;
+        position: absolute;
+        top: -15px;
+        left: 23px;
+        overflow: hidden;
+    }
+    .chat .avatar {
+        margin-top: -2px;
+    }
+    .chat p {
+        color: #6c6e71;
+        margin-bottom: 5px;
+    }
+    .chat .log {
+        position: relative;
+    }
+        .chat .log .scroll {
+            width: 6px;
+            height:60px;
+            background: #d7d9da;
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            overflow: hidden;
+            border-radius: 3px;
+            -moz-border-radius: 3px;
+        }
 
 .loadMore {
     padding: 0px;
@@ -772,10 +809,13 @@ a.publish:hover {
     -moz-box-shadow: 0 0 0 5px rgba(0,0,0,0.2);
     border-radius: 5px;
     -moz-border-radius: 5px;
+    z-index: 100;
 }
     .dialog .close {
-        top: 20px;
-        right: 30px;
+        position: relative;
+        float: right;
+        top: 0;
+        right: 0;
     }
 
 .dialog.media {
@@ -793,8 +833,6 @@ a.publish:hover {
     .dialog.media .media .item {
         margin: 21px 22px 0 4px;
     }
-
-
 
 /* !BLOCKS */
 
