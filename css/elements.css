@@ -254,10 +254,50 @@ a.grey {
     font-size: 11px;
     text-shadow: none;
 }
+a.darkGreen {
+    border-color: #3d4e24;
+    background: #3e4d24;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#415024), to(#3a4a24));
+    background-image: -moz-linear-gradient(top,  #415024,  #3a4a24);
+    text-shadow: #232d16 0 1px;
+}
 a.bigger {
     padding: 2px 10px;
 }
-
+a.publish {
+    display: inline-block;
+    padding: 8px 15px;
+    position: relative;
+    font-size: 14px;
+    color: #fff;
+    width: 102px;
+    height: 26px;
+    line-height: 26px;
+    text-decoration: none;
+}
+a.publish:hover {
+    text-decoration: none;
+}
+    a.publish b {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        display: block;
+        width: 132px;
+        height: 40px;
+        background: #fff;
+        border-radius: 3px;
+        -moz-border-radius: 3px;
+        opacity: .7;
+        filter: alpha(opacity=70);
+        -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    }
+    a.publish span {
+        position: absolute;
+        top: 7px;
+        left: 19px;
+        color: #000;
+    }
 /* !BUTTONS */
     
     
@@ -271,11 +311,11 @@ a.bigger {
     -moz-border-radius: 4px;
 }
 
-    .block .date {
-        font-size: 11px;
-        color: #8a9595;
-        line-height: 19px;
-    }
+.date {
+    font-size: 11px;
+    color: #8a9595;
+    line-height: 19px;
+}
         .block .date a.button {
             float: right;
         }
@@ -513,6 +553,39 @@ a.bigger {
         -moz-border-radius-bottomright: 0px;
         cursor: default;
     }
+.tabs.big {
+    position: absolute;
+    top: -36px;
+}
+    .tabs.big a.tab {
+        font-size: 14px;
+        border: 0px;
+    }
+    .tabs.big a.active {
+        background: #fff;
+        position: relative;
+    }
+        .tabs.big a.active i {
+            display: block;
+            height: 6px;
+            width: 13px;
+            margin-left: -7px;
+            overflow: hidden;
+            background: url('../img/tabBigActive.png') no-repeat center;
+            position: absolute;
+            left: 50%;
+            bottom: -6px;
+        }
+.tabs .white {
+    border-bottom: 1px solid #d1d1d2;
+    padding-left: 10px;
+}
+    .tabs .white a.tab {
+        margin-bottom: -1px;
+    }
+    .tabs .white a.active {
+        background: #fff;
+    }
         .tabs a.active:hover {
             text-decoration: none;
         }
@@ -567,7 +640,101 @@ a.bigger {
         .tabs a.slider:hover {
             text-decoration: none;
         }
-            
+
+.avatar {
+    position: relative;
+    border-radius: 4px;
+    moz-border-radius: 4px;
+}
+    .avatar img {
+        border-radius: 4px;
+        moz-border-radius: 4px;
+    }
+    .avatar .count {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        bottom: -7px;
+        right: -5px;
+        line-height: 21px;
+        text-align: center;
+        font-size: 12px;
+        font-weight: normal;
+        color: #fff;
+        background: #a2c656;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#ccec8a), to(#5f8904));
+        background-image: -moz-linear-gradient(top,  #ccec8a,  #5f8904);
+        border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-top-left-radius: 0px;
+        -moz-border-radius-topleft: 4px;
+    }
+    
+.clients .avatar {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.darkGrey {
+    background: #2b3033;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    padding: 10px;
+}
+    .darkGrey div {
+        width: 180px;
+        height: 150px;
+        text-align: center;
+    }
+    .darkGrey .publish {
+        margin-top: 55px;
+    }
+    .darkGrey .darkGreen {
+        display: block;
+        margin-top: 5px;
+        padding: 4px 15px;
+    }
+
+.messages {
+    margin-right: -10px;
+}
+.message {
+    margin: 0px 10px 10px 0;
+    padding: 10px;
+    display: inline-block;
+    float: left;
+    width: 288px;
+    border: 1px solid #e2e5e6;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    height: 63px;
+    line-height: 13px;
+}
+.message.wide {
+    display: block;
+    border: 0px;
+    width: auto;
+    height: auto;
+    margin-bottom: 20px;
+    margin-right: -10px;
+}
+    .message .avatar {
+        float: left;
+        margin-right: 20px;
+        padding-bottom: 10px;
+    }
+    .message .avatar.green {
+        background: #97c41d;
+    }
+    .message .avatar.red {
+        background: #ed493e;
+    }
+    .message p {
+        padding: 0px;
+        margin: 0px;
+        color: #6c6e71;
+    }
+
 /* !BLOCKS */
 
 

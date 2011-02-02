@@ -57,6 +57,10 @@ h4 {
     float: right;
 }
 
+.fl {
+    float: left;
+}
+
 .mt10 {
     margin-top: 10px;
 }
@@ -68,6 +72,11 @@ h4 {
 .mt30,
 div.mt30 {
     margin-top: 30px;
+}
+
+.mt70,
+div.mt70 {
+    margin-top: 70px;
 }
 
 .mt20,
@@ -101,7 +110,14 @@ div.pb30 {
 a.bigLink {
     font-size: 15px;
 }
-
+a.small {
+    font-size: 11px;
+    line-height: 20px;
+}
+a.small.down {
+    background: url('../img/arrowDownSmallBlue.png') no-repeat right center;
+    padding-right: 12px;
+}
 a.blue {
     color: #43b1cf;
 }
