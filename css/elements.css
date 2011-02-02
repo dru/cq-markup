@@ -710,13 +710,14 @@ a.publish:hover {
     height: 63px;
     line-height: 13px;
 }
+.message.noBorder {
+    border: 0px;
+}
 .message.wide {
     display: block;
-    border: 0px;
-    width: auto;
+    width: 610px;
     height: auto;
-    margin-bottom: 20px;
-    margin-right: -10px;
+    margin-right: 0px;
 }
     .message .avatar {
         float: left;
@@ -733,6 +734,19 @@ a.publish:hover {
         padding: 0px;
         margin: 0px;
         color: #6c6e71;
+    }
+
+.loadMore {
+    padding: 0px;
+    text-align: center;
+}
+    .loadMore a {
+        display: inline-block;
+        padding-left: 23px;
+        margin-top: 20px;
+        font-size: 15px;
+        line-height: 18px;
+        background: url('../img/loadMore.png') no-repeat left center;
     }
 
 /* !BLOCKS */
