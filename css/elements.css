@@ -242,7 +242,8 @@ a.big {
         font-size: 27px;
         margin: 0px 12px 0 0;
     }
-  
+
+.actions a.grey,  
 a.grey {
     border-color: #d9dbdc;
     background: #f4f5f6;
@@ -266,6 +267,9 @@ a.bigger {
 }
 a.fat {
     padding: 3px 12px;
+}
+a.small {
+    font-size: 11px;
 }
 a.publish {
     display: inline-block;
@@ -301,6 +305,54 @@ a.publish:hover {
         left: 19px;
         color: #000;
     }
+
+.pause {
+    width: 14px;
+    height: 13px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: url('../img/pause.png');
+}
+
+a.play {
+    position: relative;
+    padding-left: 55px;
+}
+    a.play i {
+        width: 23px;
+        height: 25px;
+        margin-top: -12px;
+        position: absolute;
+        top: 50%;
+        left: 20px;
+        background: url('../img/playSmall.png');
+    }
+
+div.actions a.group,
+div.actions a.reserve {
+    position: relative;
+    padding-left: 27px;
+}
+div.actions a.group:hover,
+div.actions a.reserve:hover {
+    text-decoration: none;
+}
+    a.group i,
+    a.reserve i {
+        position: absolute;
+        width: 15px;
+        height: 12px;
+        left: 7px;
+        top: 50%;
+        margin-top: -6px;
+        background-image: url('../img/reserve.png');
+    }
+    a.group i {
+        width: 16px;
+        height: 13px;
+        background-image: url('../img/group.png');
+    }
 /* !BUTTONS */
     
     
@@ -318,10 +370,11 @@ a.publish:hover {
         }
     
     .dialog .close,
-    .block .close {
+    .block .close,
+    .active .close {
         width: 13px;
         height: 13px;
-        background: url('../img/close.png') no-repeat;
+        background: url('../img/close.png') no-repeat center;
         position: absolute;
         right: 11px;
         top: 11px;
@@ -420,6 +473,7 @@ a.publish:hover {
         float: left;
         width: 70px;
         height: 70px;
+        clear: left;
     }
         .userInfo .avatar img {
             border-radius: 4px;
@@ -565,6 +619,7 @@ a.publish:hover {
 .tabs.big {
     position: absolute;
     top: -36px;
+    left: 0px;
 }
     .tabs.big a.tab {
         font-size: 14px;
@@ -683,6 +738,60 @@ a.publish:hover {
     display: inline-block;
     margin-right: 5px;
 }
+    .respondents .userInfo,
+    .clients .userInfo div,
+    .respondents .userInfo div,
+    .participants .userInfo div {
+        float: left;
+    }
+    .clients .userInfo .avatar,
+    .respondents .userInfo .avatar,
+    .participants .userInfo .avatar {
+        margin-right: 0px;
+    } 
+    .clients .userInfo b,
+    .respondents .userInfo b,
+    .participants .userInfo b {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .clients .userInfo i.small,
+    .respondents .userInfo i.small,
+    .participants .userInfo i.small {
+        line-height: 13px;
+    }
+    
+.respondents {
+    
+}
+.participants {
+    
+}
+    .respondents .active,
+    .participants .active {
+        float: left;
+        width: 100%;
+        margin: 0 0 15px -10px;
+        padding: 0px;
+        background: #eff0f1;
+        border-radius: 4px;
+        -moz-border-radius: 4px;
+        position: relative;
+    }   
+    .respondents .active .userInfo,
+    .participants .active .userInfo {
+        width: 100%;
+        padding: 10px;
+    }
+    .respondents .active .actions {
+        float: right;
+        margin: 5px 20px 0 0;
+    }
+    .respondents a.sendMessage {
+        position: absolute;
+        left: 10px;
+        bottom: 10px;
+    }
 
 .darkGrey {
     background: #2b3033;

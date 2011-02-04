@@ -129,6 +129,8 @@ a.small.down {
     background: url('../img/arrowDownSmallBlue.png') no-repeat right center;
     padding-right: 12px;
 }
+div.actions a.blue,
+div a.blue,
 a.blue {
     color: #43b1cf;
 }
@@ -218,6 +220,11 @@ a.red,
     border-bottom-right-radius: 0px;
     -moz-border-radius-bottomright: 0px;
 }
+    #leftShortWrapper.white {
+        background: #fff;
+        border-top-left-radius: 0px;
+        -moz-border-radius-topleft: 0px;
+    }
 
 #rightLongWrapper {
     width: 670px;
@@ -245,6 +252,11 @@ a.red,
 #rightLong {
     padding: 30px 20px;
 }
+    #rightLong .w50 {
+        float: left;
+        width: 50%;
+        margin: -10px 0 30px 0;
+    }
 
 .clear {
     clear:both;
