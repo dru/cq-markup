@@ -624,6 +624,7 @@ div.actions a.reserve:hover {
     .tabs.big a.tab {
         font-size: 14px;
         border: 0px;
+        padding: 10px 20px;
     }
     .tabs.big a.active {
         background: #fff;
@@ -907,6 +908,85 @@ div.actions a.reserve:hover {
         background: url('../img/loadMore.png') no-repeat left center;
     }
 
+div.group {
+    margin-top: 10px;
+}
+    div.group h4 {
+        position: relative;
+        display: inline-block;
+        margin: -9px 0 0 10px;
+        padding: 0 25px 0 10px;
+        background: #fff;
+    }
+        div.group h4 i {
+            position: absolute;
+            display: block;
+            width: 9px;
+            height: 6px;
+            right: 10px;
+            top: 50%;
+            margin-top: -3px;
+            background:  url('../img/arrowDownSmallBlack.png');
+        }
+
+.diagram {
+    height: 200px;
+    position: relative;
+}
+    .diagram .legend {
+        position: absolute;
+        top: 3px;
+        left: 190px;
+        color: #6c6e71;
+    }
+        .diagram .legend .item {
+            display: inline-block;
+            padding: 4px;
+            border-radius: 4px;
+            line-height: 0px;
+        }
+        .diagram .legend .red {
+            background: #ed493e;
+        }
+        .diagram .legend .green {
+            background: #97c41d;
+        }
+        .diagram .legend .grey {
+            background: #dadddf;
+        }
+        
+    .diagram .cloud {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 280px;
+        height: 160px;
+    }
+        .diagram .cloud span {
+            position: absolute;
+        }
+            .diagram .cloud span.c1 {
+                font-size: 11px;
+            }
+            .diagram .cloud span.c2 {
+                font-size: 12px;
+            }
+            .diagram .cloud span.c3 {
+                font-size: 13px;
+            }
+            .diagram .cloud span.c4 {
+                font-size: 14px;
+            }
+            .diagram .cloud span.c5 {
+                font-size: 16px;
+            }
+            .diagram .cloud span.c6 {
+                font-size: 17px;
+            }
+            .diagram .cloud span.c7 {
+                font-size: 18px;
+            }
+
 .dialog {
     background: #fff;
     padding: 20px 30px;
@@ -1080,6 +1160,14 @@ table.list {
             color: #000;
             font-weight: normal;
         }
+        #leftShort input {
+            margin: 0 10px 0 -5px;
+        }
+        #leftShort .questions div input {
+            position: absolute;
+            left: -5px;
+            margin: 0px;
+        }
 
     #leftShort .questions div.hover {
         color: #fafafa;
@@ -1112,7 +1200,12 @@ table.list {
     #leftShort .questions a.down:hover {
         text-decoration: none;
     }
-    
+#leftShort .checkboxes {
+    margin: 0px -5px 0px 0px;
+} 
+    #leftShort .checkboxes div {
+        padding-right: 0px;
+    }
 
 /* !LIST */
 
@@ -1145,6 +1238,13 @@ table.list {
     border: 0;
     height: 1px;
     background: #f0f1f1;
+}
+
+#rightLong hr {
+    margin: 0px;
+    border: 0;
+    height: 1px;
+    background: #c8cbcd;
 }
 
 #leftShort hr {

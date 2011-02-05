@@ -25,6 +25,7 @@ h2 {
 }
     h2.small {
         font-size: 18px;
+        color: #000;
     }
 
 h3 {
@@ -52,6 +53,13 @@ h4 {
     text-transform: uppercase;
     color: #000;
 }
+h4.normal {
+    text-transform: none;
+}
+h4.small {
+    font-size: 12px;
+    color: #000;
+}
 
 .fr {
     float: right;
@@ -61,6 +69,7 @@ h4 {
     float: left;
 }
 
+#leftShort hr.mt10,
 .mt10 {
     margin-top: 10px;
 }
@@ -91,6 +100,7 @@ div.mt20 {
     margin-top: 20px;
 }
 
+#leftShort hr.mb10,
 .mb10 {
     margin-bottom: 10px;
 }
@@ -101,6 +111,9 @@ div.mt20 {
 
 .ml10 {
     margin-left: 10px;
+}
+.mlm10 {
+    margin-left: -10px;
 }
 .ml20 {
     margin-left: 20px;
