@@ -118,6 +118,9 @@ div.mt20 {
 .ml20 {
     margin-left: 20px;
 }
+.mr10 {
+    margin-right: 10px;
+}
 .mr20 {
     margin-right: 20px;
 }
@@ -152,6 +155,21 @@ a.blue {
 a.red,
 #leftShort a.red {
     color: #ed493e;
+}
+
+a.black {
+    color: #000;
+}
+
+a.notification {
+    padding-left: 21px;
+    background: url('../img/notification.png') no-repeat left center;
+}
+a.report {
+    display: inline-block;
+    line-height: 17px;
+    padding-left: 17px;
+    background: url('../img/report.png') no-repeat left center;
 }
 
 .label {

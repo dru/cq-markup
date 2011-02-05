@@ -371,6 +371,9 @@ a.print {
     border-radius: 4px;
     -moz-border-radius: 4px;
 }
+.block.wider {
+    padding: 20px 30px;
+}
         .block .date a.button {
             float: right;
         }
@@ -1029,6 +1032,25 @@ div.group {
         margin: 21px 22px 0 4px;
     }
 
+.userTop {
+    height: 70px;
+}
+    .userTop h5,
+    .userTop div.actions {
+        display: inline;
+    }
+    .userTop span,
+    .userTop div.actions {
+        margin-left: 40px;
+    }
+    .userTop .avatar {
+        width: 90px;
+    }
+        .userTop .avatar img {
+            width: 70px;
+            height: 70px;
+        }
+
 /* !BLOCKS */
 
 
@@ -1244,6 +1266,9 @@ table.list {
     border: 0;
     height: 1px;
     background: #f0f1f1;
+}
+hr.narrow {
+    margin: 10px 0;
 }
 
 #rightLong hr {
