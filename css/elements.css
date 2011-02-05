@@ -353,6 +353,12 @@ div.actions a.reserve:hover {
         height: 13px;
         background-image: url('../img/group.png');
     }
+    
+a.print {
+    line-height: 15px;
+    background: url('../img/print.png') no-repeat;
+    padding-left: 20px;
+}
 /* !BUTTONS */
     
     

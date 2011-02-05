@@ -130,7 +130,9 @@ div.pl30 {
 div.pb30 {
     padding-bottom: 30px;
 }
-
+a.normal {
+    font-size: 13px;
+}
 a.bigLink {
     font-size: 15px;
 }
