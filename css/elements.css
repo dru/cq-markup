@@ -1131,6 +1131,7 @@ div.group {
 .bubbleMessage {
     width: 310px;
     float: left;
+    position: relative;
 }
     .bubbleMessage .avatar {
         float: left;
@@ -1147,6 +1148,7 @@ div.group {
 .chat .right .bubbleMessage .bubble {
     margin-left: 0px;
     margin-right: 25px;
+    text-align: right;
 }
     .chat .right .bubbleMessage .bubble i {
         left: 100%;
@@ -1177,6 +1179,39 @@ div.group {
     color: #6c6e71;
     margin: 0px;
 }
+
+
+.chat .right .bubbleMessage .dialog .avatar {
+    float: left;
+}
+
+.dialog.grey {
+    padding: 10px 10px 20px;
+    background: #eff0f1;
+    box-shadow: 0 0 0 2px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0 0 0 2px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0 0 0 2px rgba(0,0,0,0.1);
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    
+}
+    .dialog.grey .info {
+        float: left;
+        margin-left: 10px;
+        text-align: left;
+    }
+        .dialog.grey .info i.small {
+            line-height: 13px;
+        }
+    .dialog.grey .bottom {
+        width: 21px;
+        height: 14px;
+        background: url('../img/dialogBottomGrey.png') no-repeat;
+        position: absolute;
+        bottom: -12px;
+        right: 7px;
+        overflow: hidden;
+    }
 /* !BLOCKS */
 
 
