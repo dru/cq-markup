@@ -1260,7 +1260,11 @@ div.group {
             top: 11px;
             right: 11px;
         }
-        
+.row {
+    width: 320px;
+    display: inline-block;
+    position: relative;
+}        
 /* !BLOCKS */
 
 
@@ -1534,4 +1538,25 @@ hr.narrow {
 .chooseEmotion {
     width: 160px;
 }
+
+.error {
+    position: absolute;
+    background: #ffeb7a;
+    color: #ed493e;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    padding: 9px 17px 20px;
+    left: 100%;
+    top: 42px;
+    margin-left: 20px;
+    width: 230px;
+}
+    .error i {
+        position: absolute;
+        width: 8px;
+        height: 17px;
+        left: -8px;
+        top: 10px;
+        background: url('../img/error.png');
+    }
 /* !OTHER */
