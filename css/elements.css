@@ -29,6 +29,10 @@
         font-weight: normal;
         font-size: 12px;
     }
+    .label textarea,
+    .label input {
+        color: #6c6e71;
+    }
 
 .option {
     display: inline-block;
@@ -210,6 +214,18 @@ a.button {
     background-image: -moz-linear-gradient(top,  #759a00,  #5d8600);
     border-radius: 3px;
     -moz-border-radius: 3px;
+}
+a.none {
+    border: 1px solid #b5b5b5;
+    background: #cdd0d2;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#d9dcde), to(#bec1c3));
+    background-image: -moz-linear-gradient(top,  #d9dcde,  #bec1c3);
+}
+a.red {
+    border: 1px solid #bd2d24;
+    background: #d84036;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ec493e), to(#c6382f));
+    background-image: -moz-linear-gradient(top,  #ec493e,  #c6382f);
 }
     a.button b {
         font-size: 16px;
@@ -1481,4 +1497,8 @@ hr.narrow {
     .big span.counter {
         line-height: 21px;
     }
+
+.chooseEmotion {
+    width: 160px;
+}
 /* !OTHER */
