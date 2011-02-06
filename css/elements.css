@@ -244,6 +244,10 @@ a.wide {
     padding: 2px 15px;
 }
 
+a.tooWide {
+    padding: 2px 30px;
+}
+
 a.big {
     font-size: 17px;
     height: 50px;
@@ -1475,12 +1479,18 @@ table.list {
 
 
 /* OTHER */
+hr.pro,
 .block hr {
     margin: 20px -40px 0 -40px;
     border: 0;
     height: 1px;
     background: #f0f1f1;
 }
+
+hr.pro {
+    background: #e3e3e4;
+}
+
 #leftShort hr.narrow,
 hr.narrow {
     margin: 10px 0;
@@ -1558,5 +1568,32 @@ hr.narrow {
         left: -8px;
         top: 10px;
         background: url('../img/error.png');
+    }
+    
+    
+.prompt {
+    width: 370px;
+    height: 380px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -190px 0 0 -175px;
+    box-shadow: 0 0 0 5px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0 0 0 5px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0 0 0 5px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    overflow: hidden;
+}
+    .prompt #header .viewport {
+        width: 100%;
+    }
+        .prompt #logo {
+            margin-left: 20px;
+        }
+    .prompt #content {
+        background: #fff;
+        height: 100%;
+        padding: 10px 32px 0px 30px;
     }
 /* !OTHER */

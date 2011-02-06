@@ -208,7 +208,7 @@ span.dot {
     background: #000 url('../img/topBg.gif');
 }
     #header .viewport {
-        background-image: url('../img/shadowBg.png');
+        background: url('../img/shadowBg.png') no-repeat center center;
     }
     
     #logo,
@@ -336,4 +336,11 @@ span.dot {
 #footer {
     color: #2b3033;
     padding: 20px 0;
+}
+
+#footer.absolute {
+    position: absolute;
+    bottom: 0px;
+    left: 40px;
+    color: #a9acae;
 }
