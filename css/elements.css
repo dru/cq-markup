@@ -1596,4 +1596,8 @@ hr.narrow {
         height: 100%;
         padding: 10px 32px 0px 30px;
     }
+.prompt.remind {
+    height: 230px;
+    margin-top: -115px;
+}
 /* !OTHER */

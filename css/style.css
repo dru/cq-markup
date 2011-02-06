@@ -344,3 +344,6 @@ span.dot {
     left: 40px;
     color: #a9acae;
 }
+    #footer.absolute .viewport {
+        width: 100%;
+    }
