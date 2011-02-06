@@ -380,7 +380,8 @@ a.print {
     
     .dialog .close,
     .block .close,
-    .active .close {
+    .active .close,
+    .reply .close {
         width: 13px;
         height: 13px;
         background: url('../img/close.png') no-repeat center;
@@ -852,11 +853,15 @@ a.print {
         float: left;
         margin-right: 20px;
     }
-    .message .avatar.green {
+    .avatar.green {
         padding-bottom: 10px;
         background: #97c41d;
     }
-    .message .avatar.red {
+    .avatar.grey {
+        padding: 0 0 10px 0;
+        background: #dadddf;
+    }
+    .avatar.red {
         padding-bottom: 10px;
         background: #ed493e;
     }
@@ -952,6 +957,7 @@ div.group {
             display: inline-block;
             padding: 4px;
             border-radius: 4px;
+            -moz-border-radius: 4px;
             line-height: 0px;
         }
         .diagram .legend .red {
@@ -1050,7 +1056,127 @@ div.group {
             width: 70px;
             height: 70px;
         }
+        
+.bubble {
+    border: 1px solid #e2e5e6;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    background: #fff;
+    padding: 15px;
+    margin-left: 15px;
+    position: relative;
+}
+    .bubble i {
+        width: 15px;
+        height: 14px;
+        position: absolute;
+        top: 20px;
+        left: -15px;
+        background:url('../img/bubbleLeft.png');
+    }
+    .bubble b {
+        font-size: 14px;
+    }
+    .bubble p {
+        font-size: 13px;
+        color: #6c6e71;
+        padding: 0px;
+        margin: 0px;
+        line-height: 17px;
+    }
+        .bubble p.big {
+            font-size: 16px;
+        }
+        .bubble p.bigger {
+            font-size: 14px;
+        }
+.userInfo .bubble {
+    margin-left: 95px;
+}
+.userInfo .bubble.narrow {
+    margin: 2px 20px 0 115px;
+}
 
+.chat {
+    background: #f9fafa;
+    border: 1px solid #d9dbdd;
+    border-left: 0px;
+    border-right: 0px;
+    padding: 15px 0;
+    width: 100%;
+    float: left;
+}
+    .chat .viewport {
+        position: relative;
+    }
+        .chat .viewport .tabs {
+            top: -52px;
+        }
+            .chat .viewport .tabs .active {
+                background: #f9fafa;
+                border: 1px solid #d9dbdd;
+                border-bottom: 0px;
+            } 
+    .chat .left,
+    .chat .right {
+        width: 310px;
+        float: left;
+    }
+    .chat .middle  {
+        float: left;
+        width: 275px;
+        padding: 30px;
+    }
+    
+.bubbleMessage {
+    width: 310px;
+    float: left;
+}
+    .bubbleMessage .avatar {
+        float: left;
+    }
+    .bubbleMessage .bubble {
+        padding-top: 9px;
+        float: left;
+        width: 203px;
+        margin-left: 25px;
+    }
+.chat .right .bubbleMessage .avatar {
+    float: right;
+}
+.chat .right .bubbleMessage .bubble {
+    margin-left: 0px;
+    margin-right: 25px;
+}
+    .chat .right .bubbleMessage .bubble i {
+        left: 100%;
+        background:url('../img/bubbleRight.png');
+    }
+.chat.personal {
+    background: none;
+    border: 0px;
+}
+.personal .upGrey {
+    margin: -19px 0 10px 20px;
+    height: 8px;
+    width: 15px;
+    background: url('../img/arrowUpGrey.png') no-repeat;
+    border-bottom: 1px solid #dfe2e4;
+}
+#leftShort .personal hr {
+    background: #b5b7b8;
+}
+
+.reply.lightGrey {
+    position: relative;
+    padding: 13px 17px 22px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+}
+.reply p {
+    color: #6c6e71;
+    margin: 0px;
+}
 /* !BLOCKS */
 
 
@@ -1267,6 +1393,7 @@ table.list {
     height: 1px;
     background: #f0f1f1;
 }
+#leftShort hr.narrow,
 hr.narrow {
     margin: 10px 0;
 }

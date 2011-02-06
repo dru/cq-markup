@@ -9,6 +9,11 @@ input, textarea {
     font-family: Helvetica, sans-serif;
 }
 
+.chat p {
+    padding: 0px;
+    margin: 0px;
+}
+
 a {
     text-decoration: none;
 }
@@ -74,6 +79,7 @@ h4.small {
     margin-top: 10px;
 }
 
+.bubble p.mt5,
 .mt5 {
     margin-top: 5px;
 }
@@ -172,6 +178,17 @@ a.report {
     background: url('../img/report.png') no-repeat left center;
 }
 
+
+
+span.dot {
+    display: inline-block;
+    padding: 3px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    line-height: 0px;
+    background: #dadddf;
+}
+
 .label {
     color: #6c6e71;
 }
@@ -258,6 +275,9 @@ a.report {
         border-top-left-radius: 0px;
         -moz-border-radius-topleft: 0px;
     }
+#leftShortWrapper.wide {
+    width: 350px;
+}
 
 #rightLongWrapper {
     width: 670px;
@@ -272,6 +292,10 @@ a.report {
     border-bottom-left-radius: 0px;
     -moz-border-radius-bottomleft: 0px;
 }
+.wide #rightLongWrapper {
+    width: 610px;
+    left: 350px;
+}
 
 #leftShort {
     float: left;
@@ -281,9 +305,17 @@ a.report {
     padding: 20px;
     width: 250px;
 }
+.wide #leftShort {
+    left: -350px;
+    width: 310px;
+    padding-top: 17px;
+}
 
 #rightLong {
     padding: 30px 20px;
+}
+.wide #rightLong {
+    padding-top: 17px;
 }
     #rightLong .w50 {
         float: left;
