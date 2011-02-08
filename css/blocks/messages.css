@@ -1,0 +1,45 @@
+.messages {
+    margin-right: -10px;
+}
+.message {
+    margin: 0px 10px 10px 0;
+    padding: 10px;
+    display: inline-block;
+    float: left;
+    width: 288px;
+    border: 1px solid #e2e5e6;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    height: 63px;
+    line-height: 13px;
+    position: relative;
+}
+.message.noBorder {
+    border: 0px;
+}
+.message.wide {
+    display: block;
+    width: 610px;
+    height: auto;
+    margin-right: 0px;
+}
+    .message .avatar {
+        float: left;
+        margin-right: 20px;
+    }
+    .message p {
+        padding: 0px;
+        margin: 0px;
+        color: #6c6e71;
+    }
+
+.reply.lightGrey {
+    position: relative;
+    padding: 13px 17px 22px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+}
+.reply p {
+    color: #6c6e71;
+    margin: 0px;
+}

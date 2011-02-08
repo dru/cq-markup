@@ -1,0 +1,20 @@
+div.group {
+    margin-top: 10px;
+}
+    div.group h4 {
+        position: relative;
+        display: inline-block;
+        margin: -9px 0 0 10px;
+        padding: 0 25px 0 10px;
+        background: #fff;
+    }
+        div.group h4 i {
+            position: absolute;
+            display: block;
+            width: 9px;
+            height: 6px;
+            right: 10px;
+            top: 50%;
+            margin-top: -3px;
+            background:  url('../../img/arrowDownSmallBlack.png');
+        }

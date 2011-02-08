@@ -1,0 +1,18 @@
+.userTop {
+    height: 70px;
+}
+    .userTop h5,
+    .userTop div.actions {
+        display: inline;
+    }
+    .userTop span,
+    .userTop div.actions {
+        margin-left: 40px;
+    }
+    .userTop .avatar {
+        width: 90px;
+    }
+        .userTop .avatar img {
+            width: 70px;
+            height: 70px;
+        }

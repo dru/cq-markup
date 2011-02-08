@@ -1,0 +1,59 @@
+.list {
+    color: #0e0f10;
+}
+    .list dl {
+        margin: 20px 0;
+        padding: 0px;
+    }
+        .list dt {
+            margin: 0px 0 10px 0;
+            padding: 0px;
+            font-size: 14px;
+
+        }
+        .list dd {
+            margin: 0px 0;
+            padding: 0px;
+        }
+            .list dd small {
+                display: block;
+                color: #8a9595;
+                font-size: 11px;
+            }
+            .list dd a {
+                display: inline-block;
+                font-size: 14px ;
+            }
+
+
+table.list {
+    border-collapse:collapse;
+}
+    table.list th,
+    table.list td {
+        padding: 10px 20px 10px 0;
+        white-space: nowrap;
+    }
+    table.list th {
+        padding-top: 0px;
+        text-align: left;
+        font-weight: normal;
+        border-bottom: 1px solid #eff0f1;
+    }
+    table.list td {
+        color: #6c6e71;
+        font-size: 12px;
+    }
+        table.list td a {
+            font-size: 14px;
+            font-weight: bold;
+        }
+        table.list td .close {
+            position: relative;
+            float: right;
+            top: 0px;
+            right: 0px;
+        }
+            table.list td .close:hover {
+                text-decoration: none;
+            }

@@ -1,0 +1,115 @@
+.questions {}
+    .questions .grey {
+        margin-top: 10px;
+        padding: 15px 15px 15px 50px;
+        background: #f5f6f7;
+    }
+        .questions .grey:hover {
+            background: #eff0f1;
+        }
+    .questions .block {
+        color: #6c6e71;
+        font-size: 14px;
+    }
+        .questions .block .arrows {
+            width: 7px;
+            height: 18px;
+            position: absolute;
+            left: 15px;
+            top: 17px;
+        }
+            .questions .block .arrows a {
+                display: block;
+                width: 7px;
+                height: 9px;
+                cursor: pointer;
+                text-decoration: none;
+                overflow: hidden;
+            }
+                .questions .block .arrows a:hover {
+                    text-decoration: none;
+                }
+                .questions .block .arrows a.up {
+                    background: url('../../img/arrowUpSmall.png');
+                }
+                .questions .block .arrows a.down {
+                    background: url('../../img/arrowDownSmall.png');
+                }
+
+        .questions .block b.num {
+            float: left;
+            font-size: 18px;
+            color: #292e30;
+            width: 20px;
+            font-weight: normal;
+            margin-left: -20px;
+        }
+        .questions .block .actions {
+            margin-top: 15px;
+        }
+        .questions .block .button {
+            margin-top: 15px;
+        }
+        .questions .block small a {
+            color: #6c6e71;
+        }
+    .questions h3 .actions {
+        display: inline-block;
+        margin-left: 10px;
+    }
+    
+#leftShort .questions {
+    margin-left: -20px;
+    margin-right: -20px;
+}
+    #leftShort .questions div {
+        padding: 10px 30px 10px 45px;
+        position: relative;
+        color: #6c6e71;
+    }
+        #leftShort .questions div b {
+            position: absolute;
+            left: 20px;
+            color: #000;
+            font-weight: normal;
+        }
+        #leftShort input {
+            margin: 0 10px 0 -5px;
+        }
+        #leftShort .questions div input {
+            position: absolute;
+            left: -5px;
+            margin: 0px;
+        }
+
+    #leftShort .questions div.hover {
+        color: #fafafa;
+        background: #b9bdc0;
+    }
+    #leftShort .questions div.selected {
+        background: #d0d3d6 url('../../img/mark.png') no-repeat 97% 13px;
+    }
+    #leftShort .questions a.up {
+        background: url('../../img/arrowUpQuestionsBlue.png') no-repeat center;
+        height: 10px;
+        display: block;
+        margin-bottom: 5px;
+    }
+        #leftShort .questions a.up.inactive {
+            background: url('../../img/arrowUpQuestions.png') no-repeat center;
+            cursor: default;
+        }
+    #leftShort .questions a.down {
+        background: url('../../img/arrowDownQuestionsBlue.png') no-repeat center;
+        height: 10px;
+        display: block;
+        margin-top: 5px;
+    }
+        #leftShort .questions a.down.inactive {
+            background: url('../../img/arrowDownQuestions.png') no-repeat center;
+            cursor: default;
+        }
+    #leftShort .questions a.up:hover,
+    #leftShort .questions a.down:hover {
+        text-decoration: none;
+    }

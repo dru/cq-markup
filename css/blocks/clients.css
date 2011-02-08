@@ -1,0 +1,54 @@
+.clients .avatar {
+    display: inline-block;
+    margin-right: 5px;
+}
+    .respondents .userInfo,
+    .clients .userInfo div,
+    .respondents .userInfo div,
+    .participants .userInfo div {
+        float: left;
+    }
+    .clients .userInfo .avatar,
+    .respondents .userInfo .avatar,
+    .participants .userInfo .avatar {
+        margin-right: 0px;
+    }
+    .clients .userInfo b,
+    .respondents .userInfo b,
+    .participants .userInfo b {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .clients .userInfo i.small,
+    .respondents .userInfo i.small,
+    .participants .userInfo i.small {
+        line-height: 13px;
+    }
+
+.respondents {}
+.participants {}
+    .respondents .active,
+    .participants .active {
+        float: left;
+        width: 100%;
+        margin: 0 0 15px -10px;
+        padding: 0px;
+        background: #eff0f1;
+        border-radius: 4px;
+        -moz-border-radius: 4px;
+        position: relative;
+    }
+    .respondents .active .userInfo,
+    .participants .active .userInfo {
+        width: 100%;
+        padding: 10px;
+    }
+    .respondents .active .actions {
+        float: right;
+        margin: 5px 20px 0 0;
+    }
+    .respondents a.sendMessage {
+        position: absolute;
+        left: 10px;
+        bottom: 10px;
+    }

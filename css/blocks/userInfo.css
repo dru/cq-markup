@@ -1,0 +1,33 @@
+.userInfo {}
+
+    .userInfo .avatar {
+        float: left;
+        width: 70px;
+        height: 70px;
+        clear: left;
+    }
+        .userInfo .avatar img {
+            border-radius: 4px;
+            -moz-border-radius: 4px;
+        }
+
+    .userInfo .info {
+        color: #292e30;
+        margin-bottom: 10px;
+    }
+        .userInfo .info h5 {
+            margin: 0px;
+            font-size: 14px;
+        }
+        .userInfo .info i {
+            display: block;
+            font-size: 11px;
+            color: #989a9c;
+            margin-bottom: 10px;
+        }
+        .userInfo .info span {
+            font-size: 12px;
+        }
+            .userInfo .info span a {
+                font-weight: bold;
+            }

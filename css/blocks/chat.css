@@ -1,0 +1,81 @@
+.chat {
+    background: #f9fafa;
+    border: 1px solid #d9dbdd;
+    border-left: 0px;
+    border-right: 0px;
+    padding: 15px 0;
+    width: 100%;
+    float: left;
+}
+.dialog.chat {
+    left: -5px;
+    top: 60px;
+    padding: 20px;
+    width: 320px;
+    font-size: 12px;
+}
+    .chat .viewport {
+        position: relative;
+    }
+        .chat .viewport .tabs {
+            top: -52px;
+        }
+            .chat .viewport .tabs .active {
+                background: #f9fafa;
+                border: 1px solid #d9dbdd;
+                border-bottom: 0px;
+            }
+    .chat .left,
+    .chat .right {
+        width: 310px;
+        float: left;
+    }
+    .chat .middle  {
+        float: left;
+        width: 275px;
+        padding: 30px;
+    }
+    .chat .top {
+        width: 23px;
+        height: 15px;
+        background: url('../../img/dialogTop.png') no-repeat;
+        position: absolute;
+        top: -15px;
+        left: 23px;
+        overflow: hidden;
+    }
+    .chat .avatar {
+        margin-top: -2px;
+    }
+    .chat p {
+        padding: 0px;
+        margin: 0px;
+        color: #6c6e71;
+        margin-bottom: 5px;
+    }
+    .chat .log {
+        position: relative;
+    }
+        .chat .log .scroll {
+            width: 6px;
+            height:60px;
+            background: #d7d9da;
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            overflow: hidden;
+            border-radius: 3px;
+            -moz-border-radius: 3px;
+        }
+
+.chat.personal {
+    background: none;
+    border: 0px;
+}
+    .personal .upGrey {
+        margin: -19px 0 10px 20px;
+        height: 8px;
+        width: 15px;
+        background: url('../../img/arrowUpGrey.png') no-repeat;
+        border-bottom: 1px solid #dfe2e4;
+    }

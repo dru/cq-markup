@@ -1,0 +1,88 @@
+/* SIZE */
+    a.normal {
+        font-size: 13px;
+    }
+    a.bigLink {
+        font-size: 15px;
+    }
+    a.small {
+        font-size: 11px;
+        line-height: 20px;
+    }
+
+/* COLOR */
+    div.actions a.blue,
+    div a.blue,
+    a.blue {
+        color: #43b1cf;
+    }
+    a.red,
+    #leftShort a.red {
+        color: #ed493e;
+    }
+
+    a.black {
+        color: #000;
+    }
+
+/* ICONS */
+    a.small.down {
+        background: url('../img/arrowDownSmallBlue.png') no-repeat right center;
+        padding-right: 12px;
+    }
+    a.notification {
+        padding-left: 21px;
+        background: url('../img/notification.png') no-repeat left center;
+    }
+    a.report {
+        display: inline-block;
+        line-height: 17px;
+        padding-left: 17px;
+        background: url('../img/report.png') no-repeat left center;
+    }
+    a.print {
+        line-height: 15px;
+        background: url('../img/print.png') no-repeat;
+        padding-left: 20px;
+    }
+.actions a {
+    color: #43b1cf;
+    padding-left: 17px;
+    line-height: 13px;
+    font-size: 11px;
+    text-decoration: none;
+}
+
+.actions a:hover {
+    text-decoration: underline;
+}
+    div.actions a.group,
+    div.actions a.reserve {
+        position: relative;
+        padding-left: 27px;
+    }
+    div.actions a.group:hover,
+    div.actions a.reserve:hover {
+        text-decoration: none;
+    }
+        a.group i,
+        a.reserve i {
+            position: absolute;
+            width: 15px;
+            height: 12px;
+            left: 7px;
+            top: 50%;
+            margin-top: -6px;
+            background-image: url('../img/reserve.png');
+        }
+        a.group i {
+            width: 16px;
+            height: 13px;
+            background-image: url('../img/group.png');
+        }
+    .actions a.edit {
+        background: url('../img/pen.png') no-repeat 0px 1px;
+    }
+    .actions a.import {
+        background: url('../img/import.png') no-repeat;
+    }

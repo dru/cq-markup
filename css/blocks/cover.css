@@ -1,0 +1,32 @@
+.cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+    .cover .alpha {
+        width: 100%;
+        height: 100%;
+        background: #404447;
+        opacity: .9;
+        filter: alpha(opacity=90);
+        -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+    }
+    .cover .media {
+        padding: 30px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background: #16191a;
+        border-radius: 3px;
+        -moz-border-radius: 3px;
+    }
+        .cover .media .close {
+            position: absolute;
+            display: block;
+            width: 13px;
+            height: 12px;
+            background: url('../../img/closeWhite.png');
+            top: 11px;
+            right: 11px;
+        }

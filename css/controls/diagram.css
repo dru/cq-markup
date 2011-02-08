@@ -1,0 +1,58 @@
+.diagram {
+    height: 200px;
+    position: relative;
+}
+    .diagram .legend {
+        position: absolute;
+        top: 3px;
+        left: 190px;
+        color: #6c6e71;
+    }
+        .diagram .legend .item {
+            display: inline-block;
+            padding: 4px;
+            border-radius: 4px;
+            -moz-border-radius: 4px;
+            line-height: 0px;
+        }
+        .diagram .legend .red {
+            background: #ed493e;
+        }
+        .diagram .legend .green {
+            background: #97c41d;
+        }
+        .diagram .legend .grey {
+            background: #dadddf;
+        }
+
+    .diagram .cloud {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 280px;
+        height: 160px;
+    }
+        .diagram .cloud span {
+            position: absolute;
+        }
+            .diagram .cloud span.c1 {
+                font-size: 11px;
+            }
+            .diagram .cloud span.c2 {
+                font-size: 12px;
+            }
+            .diagram .cloud span.c3 {
+                font-size: 13px;
+            }
+            .diagram .cloud span.c4 {
+                font-size: 14px;
+            }
+            .diagram .cloud span.c5 {
+                font-size: 16px;
+            }
+            .diagram .cloud span.c6 {
+                font-size: 17px;
+            }
+            .diagram .cloud span.c7 {
+                font-size: 18px;
+            }

@@ -1,0 +1,31 @@
+.media {
+    margin-left: -10px;
+}
+    .media .item {
+        display: inline-block;
+        border: 5px solid #2b3033;
+        border-radius: 4px;
+        margin: 25px 0px 0px 10px;
+        position: relative;
+    }
+        .media .item .delete {
+            display: block;
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            top: -15px;
+            right: -15px;
+            background: url('../../img/mediaDelete.png') no-repeat;
+            cursor: pointer;
+        }
+        .media .item .video {
+            display: block;
+            position: absolute;
+            width: 55px;
+            height: 55px;
+            top: 50%;
+            left: 50%;
+            margin: -27px 0 0 -27px;
+            background: url('../../img/play.png') no-repeat;
+            cursor: pointer;
+        }

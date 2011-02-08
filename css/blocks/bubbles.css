@@ -1,0 +1,68 @@
+.bubble {
+    border: 1px solid #e2e5e6;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    background: #fff;
+    padding: 15px;
+    margin-left: 15px;
+    position: relative;
+}
+    .bubble i {
+        width: 15px;
+        height: 14px;
+        position: absolute;
+        top: 20px;
+        left: -15px;
+        background:url('../../img/bubbleLeft.png');
+    }
+    .bubble b {
+        font-size: 14px;
+    }
+    .bubble p {
+        font-size: 13px;
+        color: #6c6e71;
+        padding: 0px;
+        margin: 0px;
+        line-height: 17px;
+    }
+        .bubble p.big {
+            font-size: 16px;
+        }
+        .bubble p.bigger {
+            font-size: 14px;
+        }
+.userInfo .bubble {
+    margin-left: 95px;
+}
+.userInfo .bubble.narrow {
+    margin: 2px 20px 0 115px;
+}
+
+
+
+.bubbleMessage {
+    width: 310px;
+    float: left;
+    position: relative;
+}
+    .bubbleMessage .avatar {
+        float: left;
+    }
+    .bubbleMessage .bubble {
+        padding-top: 9px;
+        float: left;
+        width: 203px;
+        margin-left: 25px;
+    }
+.chat .right .bubbleMessage .avatar {
+    float: right;
+}
+.chat .right .bubbleMessage .bubble {
+    margin-left: 0px;
+    margin-right: 25px;
+    text-align: right;
+}
+    .chat .right .bubbleMessage .bubble i {
+        left: 100%;
+        background:url('../../img/bubbleRight.png');
+    }

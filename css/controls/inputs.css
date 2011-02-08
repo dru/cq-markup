@@ -1,0 +1,94 @@
+.input {
+    border: 1px solid #d1d1d2;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    padding: 6px 8px;
+    background: #fff;
+    box-shadow: inset 0 0 3px #d7d9da;
+    -webkit-box-shadow: inset 0 0 3px #d7d9da;
+    -moz-box-shadow: inset 0 0 3px #d7d9da;
+    margin-bottom: 11px;
+}
+    .input input,
+    .input input:focus,
+    .input textarea,
+    .input textarea:focus {
+        width: 99%;
+        border: 0px;
+        outline: 0 none;
+        font-size: 13px;
+    }
+    .input .default {
+        color: #cecfd0;
+        font-style: italic;
+    }
+    .input b.mandatory {
+        float: right;
+        margin: -25px -20px 0 0;
+        font-weight: normal;
+        font-size: 12px;
+    }
+    .label,
+    .label textarea,
+    .label input {
+        color: #6c6e71;
+    }
+
+.option {
+    display: inline-block;
+    padding: 3px 7px 3px 5px;
+
+}
+.option.active {
+    background: #e9ebec;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+}
+    .option a.remove {
+        background: url('../../img/deleteSmall.png') no-repeat center;
+        display: inline-block;
+        width: 11px;
+        margin: 0 3px;
+    }
+        .option a.remove:hover {
+            text-decoration: none;
+        }
+
+    .option .actions {
+        display: none;
+    }
+    .option.active .actions {
+        display: inline-block;
+    }
+
+.range {}
+    .range .input {
+        padding: 1px 3px;
+        display: inline-block;
+        width: 20px;
+        position: relative;
+        margin-right: 15px;
+    }
+        .range .input a {
+            position: absolute;
+            right: -10px;
+            width: 6px;
+            height: 4px;
+        }
+            .range .input a.up {
+                top: 30%;
+                background: url('../../img/arrowUpInput.gif') no-repeat center;
+            }
+            .range .input a.down {
+                bottom: 30%;
+                background: url('../../img/arrowDownInput.gif') no-repeat center;
+            }
+            .range .input a:hover {
+                text-decoration: none;
+            }
+
+    .range a.down {
+        display: inline-block;
+        width: 6px;
+        background: url('../../img/arrowDownInput.gif') no-repeat center;
+    }

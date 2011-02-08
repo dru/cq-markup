@@ -1,0 +1,53 @@
+.calendar {
+    display: inline-block;
+    width: 199px;
+}
+    .calendar .month {
+        font-size: 12px;
+    }
+        .calendar .month .prev {
+            float: left;
+            width: 8px;
+            height: 12px;
+            background: url('../../img/monthPrev.png');
+            margin-left: 10px;
+        }
+        .calendar .month .next {
+            float: right;
+            width: 8px;
+            height: 12px;
+            background: url('../../img/monthNext.png');
+            margin-right: 10px;
+        }
+
+    .calendar .day {
+        display: inline-block;
+        margin: 3px 0px 0 0;
+        padding: 0px;
+        width: 23px;
+        height: 18px;
+        text-align: center;
+        line-height: 18px;
+        color: #848484;
+        font-size: 11px;
+        border: 1px solid #e5e5e5;
+        border-radius: 3px;
+        -moz-border-radius: 3px;
+    }
+    .calendar .light {
+        color: #d7d7d7;
+    }
+    .calendar .dark {
+        background: #282d2f;
+        border-color: #282d2f;
+        color: #fff;
+    }
+    .calendar .weekDay {
+        border: 1px solid #fff;
+        font-weight: bold;
+        color: #a7a7a7;
+        text-transform: capitalize;
+    }
+    .calendar .active {
+        background: url('../../img/activeDay.gif') no-repeat 18px 13px;
+    }
