@@ -1,5 +1,6 @@
 .messages {
     margin-right: -10px;
+    position: relative;
 }
 .message {
     margin: 0px 10px 10px 0;

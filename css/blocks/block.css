@@ -70,6 +70,8 @@
             color: #fff;
             font-size: 11px;
             display: inline-block;
+            zoom: 1;
+            *display: inline;
             background: #97c41d;
             border-radius: 4px;
             -moz-border-radius: 4px;
@@ -118,3 +120,6 @@
             margin-top: 5px;
             padding: 4px 15px;
         }
+            .darkGrey .darkGreen img {
+                border: 0px;
+            }

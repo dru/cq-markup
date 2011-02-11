@@ -24,6 +24,8 @@
     .slider .param {
         padding: 4px 6px;
         display: inline-block;
+        zoom: 1;
+        *display: inline;
     }
     .active .param {
         background: #e9ebec;
@@ -47,12 +49,16 @@
 
 .sliderControl {
     display: inline-block;
+    zoom: 1;
+    *display: inline;
     width: 250px;
     height: 30px;
     white-space: nowrap;
 }
     .sliderControl .point {
         display: inline-block;
+        zoom: 1;
+        *display: inline;
         text-align: center;
         font-size: 11px;
         font-style: italic;

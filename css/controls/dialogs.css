@@ -9,6 +9,8 @@
     -moz-box-shadow: 0 0 0 5px rgba(0,0,0,0.2);
     border-radius: 5px;
     -moz-border-radius: 5px;
+    *border: 2px solid #e6e6e6;
+    border: 2px solid #e6e6e6\0/;
     z-index: 100;
 }
     .dialog .close {
@@ -78,6 +80,7 @@
     border-radius: 5px;
     -moz-border-radius: 5px;
     overflow: hidden;
+    
 }
     .prompt #header .viewport {
         width: 100%;
@@ -89,6 +92,7 @@
         background: #fff;
         height: 100%;
         padding: 10px 32px 0px 30px;
+        *padding-top: 20px;
     }
 .prompt.remind {
     height: 230px;

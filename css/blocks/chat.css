@@ -1,15 +1,15 @@
 .chat {
-    background: #f9fafa;
+    background: #fff;
     border: 1px solid #d9dbdd;
     border-left: 0px;
     border-right: 0px;
+    *border: 1px solid #d9dbdd;
+    border: 1px solid #d9dbdd\0/;
     padding: 15px 0;
     width: 100%;
     float: left;
 }
 .dialog.chat {
-    left: -5px;
-    top: 60px;
     padding: 20px;
     width: 320px;
     font-size: 12px;
@@ -21,7 +21,7 @@
             top: -52px;
         }
             .chat .viewport .tabs .active {
-                background: #f9fafa;
+                background: #fff;
                 border: 1px solid #d9dbdd;
                 border-bottom: 0px;
             }
@@ -46,6 +46,7 @@
     }
     .chat .avatar {
         margin-top: -2px;
+        float: left;
     }
     .chat p {
         padding: 0px;
@@ -74,6 +75,7 @@
 }
     .personal .upGrey {
         margin: -19px 0 10px 20px;
+        *margin-top: -26px;
         height: 8px;
         width: 15px;
         background: url('../../img/arrowUpGrey.png') no-repeat;

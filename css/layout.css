@@ -156,4 +156,5 @@
     }
         #footer.absolute .viewport {
             width: 100%;
+            *width: auto;
         }

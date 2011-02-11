@@ -22,7 +22,10 @@
 
     .calendar .day {
         display: inline-block;
+        zoom: 1;
+        *display: inline;
         margin: 3px 0px 0 0;
+        *margin-right: 3px;
         padding: 0px;
         width: 23px;
         height: 18px;

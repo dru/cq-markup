@@ -14,6 +14,13 @@
             border-radius: 4px;
             -moz-border-radius: 4px;
             line-height: 0px;
+            zoom: 1;
+            *display: inline;
+            *padding: 0;
+            *height: 8px;
+            *width: 8px;
+            *margin: -11px 5px 0 0;
+            *overflow: hidden;
         }
         .diagram .legend .red {
             background: #ed493e;

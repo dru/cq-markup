@@ -22,10 +22,18 @@ span.dot {
     -moz-border-radius: 3px;
     line-height: 0px;
     background: #dadddf;
+    zoom: 1;
+    *display: inline;
+    *width: 1px;
+    *height: 1px;
+    *overflow: hidden;
+    *margin: 0 2px;
 }
 .row {
     width: 320px;
     display: inline-block;
+    zoom: 1;
+    *display: inline;
     position: relative;
 }
 
@@ -34,19 +42,34 @@ span.dot {
     hr.pro,
     .block hr {
         margin: 20px -40px 0 -40px;
-        border: 0;
+        border: 0px;
         height: 1px;
         background: #f0f1f1;
+        *color: #f0f1f1;
+        *width: 590px;
+        *position: relative;
+        *left: 0px;
     }
 
     hr.pro {
         background: #e3e3e4;
+        *color: #e3e3e4;
+        *margin: 15px 0 -10px -30px;
+        *width: 370px;
+    }
+    
+    .wider hr {
+        width: 960px;
     }
 
     #leftShort hr.narrow,
     hr.narrow {
         margin: 10px 0;
     }
+    .wider hr.narrow {
+        width: 900px;
+    }
+    
 
     #rightLong hr {
         margin: 0px;

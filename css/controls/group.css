@@ -4,7 +4,10 @@ div.group {
     div.group h4 {
         position: relative;
         display: inline-block;
+        zoom: 1;
+        *display: inline;
         margin: -9px 0 0 10px;
+        *margin-top: -22px;
         padding: 0 25px 0 10px;
         background: #fff;
     }

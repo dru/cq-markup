@@ -1,6 +1,9 @@
 .clients .avatar {
     display: inline-block;
+    zoom: 1;
+    *display: inline;
     margin-right: 5px;
+    *margin-right: 10px;
 }
     .respondents .userInfo,
     .clients .userInfo div,

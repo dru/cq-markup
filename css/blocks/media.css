@@ -3,11 +3,16 @@
 }
     .media .item {
         display: inline-block;
+        zoom: 1;
+        *display: inline;
         border: 5px solid #2b3033;
         border-radius: 4px;
         margin: 25px 0px 0px 10px;
         position: relative;
     }
+        .media .item img {
+            *margin-bottom: -3px;
+        }
         .media .item .delete {
             display: block;
             position: absolute;

@@ -27,6 +27,8 @@
         margin: -25px -20px 0 0;
         font-weight: normal;
         font-size: 12px;
+        *padding-left: 5px;
+        margin-top: 0px\0/;
     }
     .label,
     .label textarea,
@@ -36,6 +38,8 @@
 
 .option {
     display: inline-block;
+    zoom: 1;
+    *display: inline;
     padding: 3px 7px 3px 5px;
 
 }
@@ -59,15 +63,27 @@
     }
     .option.active .actions {
         display: inline-block;
+        zoom: 1;
+        *display: inline;
     }
 
-.range {}
+.range {
+    *position: relative;
+}
+    .range .label {
+        *position: absolute;
+        *top: 5px;
+    }
     .range .input {
         padding: 1px 3px;
         display: inline-block;
+        zoom: 1;
+        *display: inline;
         width: 20px;
         position: relative;
         margin-right: 15px;
+        *margin-left: 50px;
+        *margin-right: -30px;
     }
         .range .input a {
             position: absolute;
@@ -77,10 +93,14 @@
         }
             .range .input a.up {
                 top: 30%;
+                *top: 23%;
+                top: 23%\0/;
                 background: url('../../img/arrowUpInput.gif') no-repeat center;
             }
             .range .input a.down {
                 bottom: 30%;
+                *bottom: 23%;
+                bottom: 23%\0/;
                 background: url('../../img/arrowDownInput.gif') no-repeat center;
             }
             .range .input a:hover {
@@ -89,6 +109,8 @@
 
     .range a.down {
         display: inline-block;
+        zoom: 1;
+        *display: inline;
         width: 6px;
         background: url('../../img/arrowDownInput.gif') no-repeat center;
     }

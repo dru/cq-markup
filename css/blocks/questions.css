@@ -10,6 +10,7 @@
     .questions .block {
         color: #6c6e71;
         font-size: 14px;
+        *position: relative;
     }
         .questions .block .arrows {
             width: 7px;
@@ -43,7 +44,10 @@
             width: 20px;
             font-weight: normal;
             margin-left: -20px;
+            *position: absolute;
+            *left: 50px;
         }
+        
         .questions .block .actions {
             margin-top: 15px;
         }
